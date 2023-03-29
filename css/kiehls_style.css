@@ -63,43 +63,43 @@ body{
 #main_header>.header_innerbox>.togglebtn.on>.bar3{
 	transform: translate(0px, -12px) rotate(-45deg);
 }
-#main_header>.header_innerbox>.menu{
+#main_header .menu{
 	width: 300px; height: 100vh;
 	background: #dcd8d4;
-	position: fixed; right: -500px; top: 0px;
+	position: fixed; right: -310px; top: 0px; z-index: -100;
 	transition: all 0.4s;
 	box-shadow: 0px -5px 8px rgba(0, 0, 0, 0.4);
 
 	/*display: none;*/
 }
-#main_header>.header_innerbox>.menu.on{
-	right: -200px;
+#main_header .menu.on{
+	right: 0;
 }
-#main_header>.header_innerbox>.menu>ul{
+#main_header .menu>ul{
 	width: 220px; height: 100vh;
 	margin-top: 150px;
 	padding: 50px 50px;
 }
-#main_header>.header_innerbox>.menu>ul>li{
+#main_header .menu>ul>li{
 	width: 220px;
 	margin-bottom: 50px;
 }
-#main_header>.header_innerbox>.menu>ul>li>a{
+#main_header .menu>ul>li>a{
 	display: block;
 	width: 100%; height: 100%;
 	color: #333;
 	font-size: 2rem;
 	font-weight: bold;
 }
-#main_header>.header_innerbox>.menu>ul>li>.sub{
+#main_header .menu>ul>li>.sub{
 	width: 200px;
 }
-#main_header>.header_innerbox>.menu>ul>li>.sub>ul>li{
+#main_header .menu>ul>li>.sub>ul>li{
 	width: 170px;
 	padding-left: 30px;
 	margin-bottom: 8px;
 }
-#main_header>.header_innerbox>.menu>ul>li>.sub>ul>li>a{
+#main_header .menu>ul>li>.sub>ul>li>a{
 	display: block;
 	width: 100%; height: 100%;
 	color: #333;
