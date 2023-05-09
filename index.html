@@ -5,6 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Kiehl's</title>
 		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src="assets/js/script.js" defer></script>
 	</head>
 	<body>
 		<header id="main_header">
@@ -52,8 +55,13 @@
 		</header>
 		<main id="main_container">
 			<section class="main_slide">
-				<h2>Main slider(three)</h2>
-				<div>slider</div>
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="assets/imgs/banner03.jpg" alt="banner1"></div>
+						<div class="swiper-slide"><img src="assets/imgs/banner02.jpg" alt="banner2"></div>
+						<div class="swiper-slide"><img src="assets/imgs/banner01.jpg" alt="banner3"></div>
+					</div>
+				</div>
 				<div>benefit</div>
 			</section>
 			<section class="intro">
