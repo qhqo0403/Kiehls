@@ -13,14 +13,39 @@
 		<header id="main_header">
 			<div class="innerbox">
 				<h1><a href="#">Kiehls</a></h1>
-				<!-- <a href="#">장바구니</a>
-				<a href="#">로그인</a> -->
-				<button class="toggle-btn">
-					<span class="bar1"></span>
-					<span class="bar2"></span>
-					<span class="bar3"></span>
-					<span class="sr_only">Toggle Navigation</span>
-				</button>
+				<div class="quick-btns">
+					<div>
+						<ul class="tnb">
+							<li>
+								<a href="#">주문조회</a>
+							</li>
+							<li>
+								<a href="#">마일리지</a>
+							</li>
+							<li>
+								<a href="#">장바구니</a>
+							</li>
+							<li>
+								<a href="#">로그인</a>
+							</li>
+						</ul>
+					</div>
+					<div class="handler-btns">
+						<div class="search">
+							<span class="icon"><i class="xi-search"></i></span>
+							<div class="clear"><i class="xi-close-thin"></i></div>
+							<div class="input-frame">
+								<input type="text" placeholder="상품을 검색해보세요!">
+							</div>
+						</div>
+						<button class="toggle-btn">
+							<span class="bar1"></span>
+							<span class="bar2"></span>
+							<span class="bar3"></span>
+							<span class="sr_only">Toggle Navigation</span>
+						</button>
+					</div>
+				</div>
 			</div>
 			<nav class="gnb">
 				<ul class="font">
@@ -59,9 +84,10 @@
 			<section class="main_content">
 				<div class="swiper">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src="assets/imgs/banner03.jpg" alt="banner1"></div>
-						<div class="swiper-slide"><img src="assets/imgs/banner02.jpg" alt="banner2"></div>
-						<div class="swiper-slide"><img src="assets/imgs/banner01.jpg" alt="banner3"></div>
+						<div class="swiper-slide"><img src="assets/images/slider01.jpg" alt="ultra slide"></div>
+						<div class="swiper-slide"><img src="assets/images/slider02.jpg" alt="uv slide"></div>
+						<div class="swiper-slide"><img src="assets/images/slider03.jpg" alt="correct serum slide"></div>
+						<div class="swiper-slide"><img src="assets/images/slider04.jpg" alt="ultra slide"></div>
 					</div>
 					<button class="swiper-button-prev"></button>
 					<button class="swiper-button-next"></button>
@@ -69,7 +95,7 @@
 				</div>
 				<div class="benefit">
 					<div class="imgbox">
-						<img src="assets/imgs/greenlogo.png" alt="mark">
+						<img src="assets/images/greenlogo.png" alt="mark">
 					</div>
 					<div class="txt">
 						<h2>공식몰 구매 혜택</h2>
@@ -89,61 +115,86 @@
 				</div>
 			</section>
 			<section class="products">
-				<h2>best seller and new product</h2>
 				<div class="best">
+					<div class="best-heading">
+						<h2>Best seller</h2>
+						<a href="#">자세히보기</a>
+					</div>
 					<div class="items">
 						<div class="item">
-							<img src="assets/imgs/울트라크림.jpg" alt="울트라크림" data-index="1">
+							<a href="#">
+								<img src="assets/images/ultra.jpg" alt="ultra cream" data-name="ultra">
+							</a>
 							<div class="detail">
 								<h3>울트라 훼이셜 크림</h3><span class="shop">shop</span>
 								<p>No.1 국민 수분 크림</p>
-								<strong>49,000원 ~</strong>
+								<strong>30,000원 ~</strong>
 							</div>
 						</div>
 						<div class="item">
-							<img src="assets/imgs/울트라크림.jpg" alt="울트라크림" data-index="1">
+							<a href="#">
+								<img src="assets/images/toner.jpg" alt="carendula toner" data-name="toner">
+							</a>
 							<div class="detail">
-								<h3>울트라 훼이셜 크림</h3><span class="shop">shop</span>
-								<p>No.1 국민 수분 크림</p>
-								<strong>49,000원 ~</strong>
+								<h3>칼렌듈라 허벌 엑스트렉트 토너</h3><span class="shop">shop</span>
+								<p>수분∙진정 칼렌듈라 꽃잎 토너</p>
+								<strong>23,000원 ~</strong>
 							</div>
 						</div>
 						<div class="item">
-							<img src="assets/imgs/울트라크림.jpg" alt="울트라크림" data-index="1">
+							<a href="#">
+								<img src="assets/images/correct.jpg" alt="correct serum" data-name="correct">
+							</a>
 							<div class="detail">
-								<h3>울트라 훼이셜 크림</h3><span class="shop">shop</span>
-								<p>No.1 국민 수분 크림</p>
-								<strong>49,000원 ~</strong>
+								<h3>클리어리 코렉티브 다크스팟 솔루션</h3><span class="shop">shop</span>
+								<p>키엘 투명 에센스</p>
+								<strong>97,000원 ~</strong>
 							</div>
 						</div>
 						<div class="item">
-							<img src="assets/imgs/울트라크림.jpg" alt="울트라크림" data-index="1">
+							<a href="#">
+								<img src="assets/images/super.jpg" alt="super cream" data-name="super">
+							</a>
 							<div class="detail">
-								<h3>울트라 훼이셜 크림</h3><span class="shop">shop</span>
-								<p>No.1 국민 수분 크림</p>
-								<strong>49,000원 ~</strong>
+								<h3>수퍼 멀티 코렉티브 크림</h3><span class="shop">shop</span>
+								<p>키엘 수퍼 크림</p>
+								<strong>102,000원 ~</strong>
 							</div>
 						</div>
 						<div class="item">
-							<img src="assets/imgs/울트라크림.jpg" alt="울트라크림" data-index="1">
+							<a href="#">
+								<img src="assets/images/vita.jpg" alt="vita serum" data-name="vita">
+							</a>
 							<div class="detail">
-								<h3>울트라 훼이셜 크림</h3><span class="shop">shop</span>
-								<p>No.1 국민 수분 크림</p>
-								<strong>49,000원 ~</strong>
+								<h3>파워풀 스트렝스 라인 리듀싱 콘센트레이트</h3><span class="shop">shop</span>
+								<p>파워풀 비타민C 에센스</p>
+								<strong>120,000원 ~</strong>
 							</div>
 						</div>
 						<div class="item">
-							<img src="assets/imgs/울트라크림.jpg" alt="울트라크림" data-index="1">
+							<a href="#">
+								<img src="assets/images/does.jpg" alt="does serum" data-name="does">
+							</a>
 							<div class="detail">
-								<h3>울트라 훼이셜 크림</h3><span class="shop">shop</span>
+								<h3>스킨 리뉴잉 데일리 마이크로-도즈 세럼</h3><span class="shop">shop</span>
+								<p>백화점 신제품 판매 1위 세럼</p>
+								<strong>127,000원</strong>
+							</div>
+						</div>
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/uv.jpg" alt="sunscreen" data-name="uv">
+							</a>
+							<div class="detail">
+								<h3>울트라 라이트 데일리 유브이 디펜스 썬스크린</h3><span class="shop">shop</span>
 								<p>No.1 국민 수분 크림</p>
-								<strong>49,000원 ~</strong>
+								<strong>42,000원 ~</strong>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="new">
-					<h3>new or recommend</h3>
+					<h2>New</h2>
 					<div class="new_item"></div>
 					<div class="recommend"></div>
 				</div>
@@ -151,24 +202,72 @@
 			<section class="brand">
 				<div class="wrapper">
 					<div class="innerbox">
-						<div class="txt">
+						<div class="heading">
 							<h2>brand story</h2>
 						</div>
-						<div>
-							brand
+						<div class="story">
+							<a href="#">
+								<img src="assets/images/brand_story.jpg" alt="brand story">
+							</a>
+							<div class="txt">
+								1851년 뉴욕 약국에서 시작한 키엘의 이야기
+							</div>
 						</div>
 						<div>
-							natural material
+							<a href="#">
+								<img src="assets/images/en.jpg" alt="environment">
+							</a>
+							<div class="txt">
+								환경에 대한 책임과 사회공헌
+							</div>
 						</div>
 						<div>
-							environment
+							<a href="#">
+								<img src="assets/images/natural.jpg" alt="natural">
+							</a>
+							<div class="txt">
+								최신 테크놀로지와 엄선된 내추럴 성분
+							</div>
+						</div>
+						<div>
+							<a href="#">
+								<img src="assets/images/recycle.jpg" alt="recycle">
+							</a>
+							<div class="txt">
+								키엘 공병 이야기
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 		</main>
 		<footer id="main_footer">
-			<h2>footer</h2>
+			<div class="footer_innerbox">
+				<div class="left">
+					<ul>
+						<li>사업자명 : 엘오케이(유)</li>
+						<li>대표 : 사무엘 티보 부티에 뒤 리테일</li>
+						<li>사업자 등록번호 : 220-81-73482</li>
+						<li>통신 판매업 신고 : 2012-서울강남-01663</li>
+					</ul>
+					<address>주소 : 서울특별시 강남구 영동대로 517 아셈타워 31충</address>
+					<p>&copy; 2022 KIEHL’S SINCE 1851</p>
+				</div>
+				<div class="right">
+					<p>
+						고객센터 : 080-822-3322<span>평일 9:00 ~ 18:00</span>
+					</p>
+					<ul>
+						<li><a href="#">개인정보처리방침</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#">글로벌사이트</a></li>
+					</ul>
+					<p>
+						퍼스트데이코리아(유) 구매안전(에스크로)서비스 가맹점<br>
+						안전한 전자상거래를 위해 구매안전 서비스를 이용할 수 있습니다.
+					</p>
+				</div>
+			</div>
 		</footer>
 	</body>
 </html>

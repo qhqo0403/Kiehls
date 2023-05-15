@@ -2,7 +2,7 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
 
-  speed: 800,
+  speed: 1000,
   spaceBetween: 0,
 
   autoplay: {
