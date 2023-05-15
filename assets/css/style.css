@@ -59,7 +59,7 @@ h1, h2, h3, .font {
 	height: 100%;
 }
 #main_header .tnb {
-	font-size: 14px;
+	font-size: 12px;
 	text-align: right;
 }
 #main_header .tnb li {
@@ -78,10 +78,9 @@ h1, h2, h3, .font {
 	text-decoration: underline;
 }
 #main_header .handler-btns {
-	height: 80px;
 	display: flex;
 	justify-content: flex-end;
-	align-items: center;
+	margin-top: 15px;
 }
 /*search btn & input*/
 #main_header .search {
@@ -208,7 +207,7 @@ h1, h2, h3, .font {
 	margin-bottom: 150px;
 }
 #main_container .swiper {
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 #main_container .swiper img {
 	width: 100%;
@@ -234,7 +233,39 @@ h1, h2, h3, .font {
 #main_container .swiper-pagination-bullets .swiper-pagination-bullet-active {
 	background: #222;
 }
-
+/*benefit*/
+.main_content .benefit {
+	width: 1200px; height: 300px;
+	margin: 0 auto;
+	display: flex;
+	background: #f2f2f0;
+}
+.main_content .benefit-img {
+	flex: 1;
+	background: url(../images/boxs.jpg) no-repeat left center;
+	background-size: cover;
+}
+.main_content .txt {
+	flex: 2;
+	padding: 50px 0 0 70px;
+}
+.main_content .txt h2 {
+	font-weight: normal;
+	font-size: 32px;
+	margin-bottom: 15px;
+}
+.main_content .txt p {
+	font-size: 20px;
+	margin-bottom: 60px;
+}
+.main_content .txt a {
+	display: inline-block;
+	padding: 10px 30px;
+	border: 1px solid #333;
+	border-radius: 10px;
+	font-size: 14px;
+	font-weight: 400; 
+}
 /* 
 
 
