@@ -7,7 +7,7 @@
 
 
 /* default css*/
-body, header, nav, main, footer, section, div, p, h1, h2, ul, li, button, address { 
+body, header, nav, main, footer, section, div, p, h1, h2, h3, ul, li, button, address { 
 	margin: 0px; padding: 0px;
 }
 ul {
@@ -27,27 +27,28 @@ address {
 body {
 	font-family: 'Noto Sans KR', sans-serif;
 	color: #333;
+	cursor: default;
 }
 h1, h2, h3, .font {
 	font-family: 'Montserrat', sans-serif;
 }
 /*header*/
-#main_header {
+#main-header {
 	width: 100%; height: 100px;
 	position: fixed; left: 0; top: 0; z-index: 1000;
 	background: #fff;
 }
-#main_header .innerbox {
+#main-header .innerbox {
 	max-width: 1500px; height: inherit;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-#main_header h1 {
+#main-header h1 {
 	width: 250px; height: 80px;
 }
-#main_header h1 a {
+#main-header h1 a {
 	display: block;
 	width: 100%; height: 100%;
 	text-indent: -9999px;
@@ -55,43 +56,43 @@ h1, h2, h3, .font {
 	background-size: cover;
 }
 /*tnb*/
-#main_header .quick-btns {
+#main-header .quick-btns {
 	height: 100%;
 }
-#main_header .tnb {
+#main-header .tnb {
 	font-size: 12px;
 	text-align: right;
 }
-#main_header .tnb li {
+#main-header .tnb li {
 	display: inline-block;
 }
-#main_header .tnb li::before {
+#main-header .tnb li::before {
 	content: '|';
 	font-size: 12px;
 	margin: 8px;
 	position: relative; top: -1px;
 }
-#main_header .tnb li:first-child::before {
+#main-header .tnb li:first-child::before {
 	content: '';
 }
-#main_header .tnb li a:hover {
+#main-header .tnb li a:hover {
 	text-decoration: underline;
 }
-#main_header .handler-btns {
+#main-header .handler-btns {
 	display: flex;
 	justify-content: flex-end;
 	margin-top: 15px;
 }
 /*search btn & input*/
-#main_header .search {
+#main-header .search {
 	width: 40px; height: 40px;
 	position: relative;
 	overflow: hidden;
 }
-#main_header .search.active {
+#main-header .search.active {
 	width: 400px;
 }
-#main_header .icon {
+#main-header .icon {
 	position: absolute; left: 0; top: 50%;
 	transform: translateY(-50%);
 	width: 40px; height: 40px;
@@ -100,39 +101,39 @@ h1, h2, h3, .font {
 	line-height: 40px;
 	cursor: pointer;
 }
-#main_header .input-frame {
+#main-header .input-frame {
 	position: absolute; left: 50px; top: 50%;
 	transform: translateY(-50%);
 	width: 300px; height: 40px;
 }
-#main_header .input-frame input {
+#main-header .input-frame input {
 	width: 100%; height: 100%;
 	border: none;
 	outline: none;
 	font-size: 18px;
 	border-bottom: 1px solid #333;
 }
-#main_header .input-frame input::placeholder {
+#main-header .input-frame input::placeholder {
 	transition: all .3s;
 }
-#main_header .input-frame input:focus::placeholder {
+#main-header .input-frame input:focus::placeholder {
   opacity: 0;
 }
-#main_header .clear {
+#main-header .clear {
 	position: absolute; right: 20px; top: 50%;
 	transform: translateY(-50%);
 	cursor: pointer;
 	opacity: 0;
 }
 /*toggle button*/
-#main_header .toggle-btn {
+#main-header .toggle-btn {
 	width: 40px; height: 42px;
 	background: transparent;
 	cursor: pointer;
 	margin-left: 20px;
 	position: relative; z-index: 200;
 }
-#main_header .toggle-btn span {
+#main-header .toggle-btn span {
 	display: block;
 	width: 40px; height: 6px;
 	margin: 6px 0;
@@ -140,125 +141,125 @@ h1, h2, h3, .font {
 	border-radius: 3px;
 	opacity: 1;
 }
-#main_header .toggle-btn .sr_only {
+#main-header .toggle-btn .sr-only {
 	width: 0; height: 0;
 	font-size: 0;
 	visibility: hidden;
 }
-#main_header .toggle-btn.on .bar1{
+#main-header .toggle-btn.on .bar1{
 	transform: translate(0px, 12px) rotate(45deg);
 }
-#main_header .toggle-btn.on .bar2{
+#main-header .toggle-btn.on .bar2{
 	opacity: 0;
 }
-#main_header .toggle-btn.on .bar3{
+#main-header .toggle-btn.on .bar3{
 	transform: translate(0px, -12px) rotate(-45deg);
 }
 /*gnb*/
-#main_header .gnb {
+#main-header .gnb {
 	width: 350px; height: 100vh;
 	position: absolute; right: -100%; top: 0; z-index: 100;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-#main_header .gnb.active {
+#main-header .gnb.active {
 	right: 0;
 }
-#main_header .gnb>ul>li {
+#main-header .gnb>ul>li {
 	margin-bottom: 20px;
 }
-#main_header .gnb>ul>li:last-of-type {
+#main-header .gnb>ul>li:last-of-type {
 	margin-bottom: 0;
 }
-#main_header .gnb>ul>li>a {
+#main-header .gnb>ul>li>a {
 	font-weight: 600;
 	font-size: 28px;
 }
-#main_header .gnb>ul>li>a::before {
+#main-header .gnb>ul>li>a::before {
 	font-family: fontawesome;
 	content: '\f105';
 	margin-right: 5px;
 	opacity: 0;
 }
-#main_header .gnb>ul>li:hover>a::before {
+#main-header .gnb>ul>li:hover>a::before {
 	opacity: 1;
 }
-#main_header .gnb .sub {
+#main-header .gnb .sub {
 	padding-top: 5px;
 	margin-left: 25px;
 }
-#main_header .gnb .sub li {
+#main-header .gnb .sub li {
 	margin-bottom: 10px;
 }
-#main_header .gnb .sub li:last-of-type {
+#main-header .gnb .sub li:last-of-type {
 	margin-bottom: 0;
 }
-#main_header .gnb .sub li:hover a {
+#main-header .gnb .sub li:hover a {
 	text-decoration: underline;
 }
 
 /* main start*/
-#main_container {
+#main-container {
 	padding-top: 100px;
 	margin-bottom: 100px;
 }
-#main_container .main_content {
+#main-container .main-content {
 	margin-bottom: 150px;
 }
-#main_container .swiper {
-	margin-bottom: 50px;
+#main-container .swiper {
+	margin-bottom: 100px;
 }
-#main_container .swiper img {
+#main-container .swiper-slide img {
 	width: 100%;
 }
-#main_container .swiper button {
+#main-container .swiper button {
 	background: transparent;
 	color: #fff;
 	outline: none;
 }
-#main_container button.swiper-button-prev {
+#main-container button.swiper-button-prev {
 	left: 40px;
 }
-#main_container button.swiper-button-next {
+#main-container button.swiper-button-next {
 	right: 40px;
 }
-#main_container .swiper-button-prev::after, #main_container .swiper-button-next::after {
+#main-container .swiper-button-prev::after, #main-container .swiper-button-next::after {
 	font-size: 70px;
 }
-#main_container .swiper-pagination-bullets .swiper-pagination-bullet{
+#main-container .swiper-pagination-bullets .swiper-pagination-bullet{
   width: 80px; height: 5px;
 	border-radius: 0;
 }
-#main_container .swiper-pagination-bullets .swiper-pagination-bullet-active {
+#main-container .swiper-pagination-bullets .swiper-pagination-bullet-active {
 	background: #222;
 }
 /*benefit*/
-.main_content .benefit {
+.main-content .benefit {
 	width: 1200px; height: 300px;
 	margin: 0 auto;
 	display: flex;
 	background: #f2f2f0;
 }
-.main_content .benefit-img {
+.main-content .benefit-img {
 	flex: 1;
 	background: url(../images/boxs.jpg) no-repeat left center;
 	background-size: cover;
 }
-.main_content .txt {
+.main-content .txt {
 	flex: 2;
 	padding: 50px 0 0 70px;
 }
-.main_content .txt h2 {
+.main-content .txt h2 {
 	font-weight: normal;
 	font-size: 32px;
 	margin-bottom: 15px;
 }
-.main_content .txt p {
+.main-content .txt p {
 	font-size: 20px;
 	margin-bottom: 60px;
 }
-.main_content .txt a {
+.main-content .txt a {
 	display: inline-block;
 	padding: 10px 30px;
 	border: 1px solid #333;
@@ -273,6 +274,7 @@ h1, h2, h3, .font {
 	background-size: cover;
 	text-align: center;
 	position: relative;
+	margin-bottom: 150px;
 }
 .intro .alpha {
 	width: 100%; height: 100%;
@@ -316,11 +318,74 @@ h1, h2, h3, .font {
 }
 /*products*/
 /*best seller*/
-
+.products {
+	margin-bottom: 150px;
+}
+.best {
+	width: 1500px;
+	margin: 0 auto;
+}
+.best-heading {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.best-heading h2 {
+	font-size: 48px;
+	font-weight: 500;
+}
+.best-heading a {
+	display: block;
+	width: 50px; height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 40px;
+	font-weight: 300;
+	border: 1px solid #f2f2f0;
+}
+.best .item {
+	max-width: 350px; 
+}
+.best .item img {
+	width: 100%;
+}
+.best .item:last-of-type .detail h3 {
+	letter-spacing: -0.1rem;
+}
+.best .detail {
+	height: 100px;
+	margin-top: 15px;
+}
+.best .detail h3{
+	font-size: 18px;
+	letter-spacing: -0.05rem;
+}
+.best .detail p {
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 5px;
+}
+.best .price {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: auto;
+}
+.best .price strong {
+	font-weight: 400;
+}
+.best .price a {
+	display: block;
+}
+.best .price i {
+	display: block;
+	font-size: 24px;
+}
 /* 
 
 
-.main_content .benefit {
+.main-content .benefit {
 	max-width: 1280px; height: 300px;
 	background: #f2f2f2;
 	margin: 0 auto;

@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const main_swiper = new Swiper('.main', {
   direction: 'horizontal',
   loop: true,
 
@@ -16,5 +16,14 @@ const swiper = new Swiper('.swiper', {
   navigation: {
   nextEl: '.swiper-button-next',
   prevEl: '.swiper-button-prev',
+  },
+});
+
+const best_swiper = new Swiper(".best", {
+  slidesPerView: 4,
+  spaceBetween: 40,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   },
 });
