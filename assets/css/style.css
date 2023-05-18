@@ -37,6 +37,8 @@ h1, h2, h3, .font {
 	width: 100%; height: 100px;
 	position: fixed; left: 0; top: 0; z-index: 1000;
 	background: #fff;
+	border: 1px solid #eee;
+	box-sizing: border-box;
 }
 #main-header .innerbox {
 	max-width: 1500px; height: inherit;
@@ -213,15 +215,15 @@ h1, h2, h3, .font {
 #main-container .swiper-slide img {
 	width: 100%;
 }
-#main-container .swiper button {
+#main-container .main button {
 	background: transparent;
 	color: #fff;
 	outline: none;
 }
-#main-container button.swiper-button-prev {
+#main-container .main button.swiper-button-prev {
 	left: 40px;
 }
-#main-container button.swiper-button-next {
+#main-container .main button.swiper-button-next {
 	right: 40px;
 }
 #main-container .swiper-button-prev::after, #main-container .swiper-button-next::after {
@@ -348,10 +350,15 @@ h1, h2, h3, .font {
 	max-width: 350px; 
 }
 .best .item img {
-	width: 100%;
+	transition: all .4s;
 }
 .best .item:last-of-type .detail h3 {
 	letter-spacing: -0.1rem;
+}
+.best button {
+	background: transparent;
+	color: #333;
+	outline: none;
 }
 .best .detail {
 	height: 100px;
@@ -364,12 +371,12 @@ h1, h2, h3, .font {
 .best .detail p {
 	font-size: 14px;
 	font-weight: 400;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 .best .price {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
 	margin-top: auto;
 }
 .best .price strong {
@@ -379,53 +386,77 @@ h1, h2, h3, .font {
 	display: block;
 }
 .best .price i {
-	display: block;
 	font-size: 24px;
 }
-/* 
+/*new*/
 
 
-.main-content .benefit {
-	max-width: 1280px; height: 300px;
-	background: #f2f2f2;
-	margin: 0 auto;
-}
-
-.intro {
-	width: 100%; height: 100vh;
-	background: #f2f2f2;
-	margin-bottom: 100px;
-}
-
-.products {
-	max-width: 1500px;
-	margin: 0 auto;
-	margin-bottom: 100px;
-}
-.best {
-	margin-bottom: 100px;
-	overflow: hidden;
-}
-.items {
+/*brand*/
+.brand {
+	padding-left: 200px;
 	display: flex;
-	width: 2500px;
 }
-.items div {
-	float: left;
-	margin-right: 20px;
+.brand .heading {
+	width: 400px !important; height: 450px;
+	display: flex;
+	flex-direction: column;
 }
-.items div img{
-	width: 350px; height: 400px;
+.brand .heading h2 {
+	font-size: 48px;
+	font-weight: 500;
+	margin-bottom: 8px;
 }
-.item .detail {
-	width: 100%;
-	background: #fff;
-	margin-top: 10px;
+.brand .heading p {
+	font-weight: 400;
+	margin-bottom: 30px;
+	font-size: 18px;
 }
-.new {
-	height: 1000px; 
-	background: #f2f2f2;
+.brand .heading a {
+	width: 130px; height: 40px;
+	border: 1px solid #333;
+	border-radius: 10px;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	line-height: 40px; 
+	margin-top: auto;
 }
+.brand .story .swiper-slide {
+	max-width: 700px; max-height: 450px;
+}
+.brand .story .border {
+	border: 1px solid #f2f2f0;
+
+}
+.brand .story .content {
+	position: relative;
+}
+.brand .story .content .txt {
+	width: 100%; height: 100%;
+	position: absolute; left: 0; top: 0;
+	font-size: 18px;
+	background: rgba(0, 0, 0, 0.6);
+	opacity: 0;
+	transition: all .4s;
+}
+.brand .story .content .txt a {
+	display: block;
+	width: 100%; height: 100%;
+	color: #fff;
+	font-weight: 500;
+	padding: 330px 0 0 30px;
+	box-sizing: border-box;
+}
+.brand .story .content .txt span {
+	display: block;
+	font-size: 42px;
+	font-weight: 500;
+}
+
+.brand .story .content:hover .txt {
+	opacity: 1;
+}
+/*
 
 .brand {
 	width: 100%;

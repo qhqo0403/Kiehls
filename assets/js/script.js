@@ -14,16 +14,34 @@ const main_swiper = new Swiper('.main', {
   },
 
   navigation: {
-  nextEl: '.swiper-button-next',
-  prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });
 
 const best_swiper = new Swiper(".best", {
   slidesPerView: 4,
   spaceBetween: 40,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+
+  autoplay: {
+    disableOnInteraction: false,
+  },
+  
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });
+
+const story_swiper = new Swiper(".story", {
+  slidesPerView: "auto",
+  spaceBetween: 50,
+})
+
+const anchors = document.querySelectorAll('a');
+
+anchors.forEach(anchor => {
+  anchor.addEventListener('click', event => {
+    event.preventDefault();
+  })
+})
