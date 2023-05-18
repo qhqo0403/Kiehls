@@ -26,8 +26,10 @@ address {
 /*style*/
 body {
 	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 16px;
 	color: #333;
 	cursor: default;
+	overflow-x: hidden;
 }
 h1, h2, h3, .font {
 	font-family: 'Montserrat', sans-serif;
@@ -62,7 +64,7 @@ h1, h2, h3, .font {
 	height: 100%;
 }
 #main-header .tnb {
-	font-size: 12px;
+	font-size: 0.75rem;
 	text-align: right;
 }
 #main-header .tnb li {
@@ -70,7 +72,7 @@ h1, h2, h3, .font {
 }
 #main-header .tnb li::before {
 	content: '|';
-	font-size: 12px;
+	font-size: 0.75rem;
 	margin: 8px;
 	position: relative; top: -1px;
 }
@@ -98,7 +100,7 @@ h1, h2, h3, .font {
 	position: absolute; left: 0; top: 50%;
 	transform: translateY(-50%);
 	width: 40px; height: 40px;
-	font-size: 38px;
+	font-size: 2.375rem;
 	text-align: center;
 	line-height: 40px;
 	cursor: pointer;
@@ -112,7 +114,7 @@ h1, h2, h3, .font {
 	width: 100%; height: 100%;
 	border: none;
 	outline: none;
-	font-size: 18px;
+	font-size: 1.125rem;
 	border-bottom: 1px solid #333;
 }
 #main-header .input-frame input::placeholder {
@@ -176,7 +178,7 @@ h1, h2, h3, .font {
 }
 #main-header .gnb>ul>li>a {
 	font-weight: 600;
-	font-size: 28px;
+	font-size: 1.75rem;
 }
 #main-header .gnb>ul>li>a::before {
 	font-family: fontawesome;
@@ -209,7 +211,7 @@ h1, h2, h3, .font {
 #main-container .main-content {
 	margin-bottom: 150px;
 }
-#main-container .swiper {
+#main-container .main {
 	margin-bottom: 100px;
 }
 #main-container .swiper-slide img {
@@ -227,7 +229,7 @@ h1, h2, h3, .font {
 	right: 40px;
 }
 #main-container .swiper-button-prev::after, #main-container .swiper-button-next::after {
-	font-size: 70px;
+	font-size: 4.375rem;
 }
 #main-container .swiper-pagination-bullets .swiper-pagination-bullet{
   width: 80px; height: 5px;
@@ -254,7 +256,7 @@ h1, h2, h3, .font {
 }
 .main-content .txt h2 {
 	font-weight: normal;
-	font-size: 32px;
+	font-size: 2rem;
 	margin-bottom: 15px;
 }
 .main-content .txt p {
@@ -266,7 +268,7 @@ h1, h2, h3, .font {
 	padding: 10px 30px;
 	border: 1px solid #333;
 	border-radius: 10px;
-	font-size: 14px;
+	font-size: 1.25rem;
 	font-weight: 400; 
 }
 /*intro*/
@@ -299,7 +301,7 @@ h1, h2, h3, .font {
 	margin-top: 30px;
 }
 .alpha div p{
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-weight: 300;
 	letter-spacing: 0.5rem;
 	opacity: 0;
@@ -325,7 +327,7 @@ h1, h2, h3, .font {
 }
 .best {
 	width: 1500px;
-	margin: 0 auto;
+	margin: 0 auto 100px;
 }
 .best-heading {
 	display: flex;
@@ -334,7 +336,7 @@ h1, h2, h3, .font {
 	margin-bottom: 20px;
 }
 .best-heading h2 {
-	font-size: 48px;
+	font-size: 3rem;
 	font-weight: 500;
 }
 .best-heading a {
@@ -342,7 +344,7 @@ h1, h2, h3, .font {
 	width: 50px; height: 50px;
 	text-align: center;
 	line-height: 50px;
-	font-size: 40px;
+	font-size: 2.5rem;
 	font-weight: 300;
 	border: 1px solid #f2f2f0;
 }
@@ -365,11 +367,11 @@ h1, h2, h3, .font {
 	margin-top: 15px;
 }
 .best .detail h3{
-	font-size: 18px;
+	font-size: 1.125rem;
 	letter-spacing: -0.05rem;
 }
 .best .detail p {
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-weight: 400;
 	margin-bottom: 10px;
 }
@@ -386,10 +388,12 @@ h1, h2, h3, .font {
 	display: block;
 }
 .best .price i {
-	font-size: 24px;
+	font-size: 1.5rem;
 }
 /*new*/
-
+.new {
+	width: 100%; height: 1000px;
+}
 
 /*brand*/
 .brand {
@@ -397,25 +401,25 @@ h1, h2, h3, .font {
 	display: flex;
 }
 .brand .heading {
-	width: 400px !important; height: 450px;
+	width: 1000px;
 	display: flex;
 	flex-direction: column;
 }
 .brand .heading h2 {
-	font-size: 48px;
+	font-size: 3rem;
 	font-weight: 500;
 	margin-bottom: 8px;
 }
 .brand .heading p {
 	font-weight: 400;
 	margin-bottom: 30px;
-	font-size: 18px;
+	font-size: 1.125rem;
 }
 .brand .heading a {
 	width: 130px; height: 40px;
 	border: 1px solid #333;
 	border-radius: 10px;
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-weight: 400;
 	text-align: center;
 	line-height: 40px; 
@@ -434,7 +438,7 @@ h1, h2, h3, .font {
 .brand .story .content .txt {
 	width: 100%; height: 100%;
 	position: absolute; left: 0; top: 0;
-	font-size: 18px;
+	font-size: 1.125rem;
 	background: rgba(0, 0, 0, 0.6);
 	opacity: 0;
 	transition: all .4s;
@@ -449,37 +453,94 @@ h1, h2, h3, .font {
 }
 .brand .story .content .txt span {
 	display: block;
-	font-size: 42px;
+	font-size: 2.625rem;
 	font-weight: 500;
 }
-
 .brand .story .content:hover .txt {
 	opacity: 1;
 }
-/*
-
-.brand {
-	width: 100%;
-	padding: 100px 0;
-	background: #f2f2f2;
+/*footer*/
+#main-footer {
+	width: 100%; height: 250px;
+	background: #f2f2f0;
+	font-size: 0.875rem;
+	font-weight: 400;
+	padding-top: 10px;
+	box-sizing: border-box;
 }
-.brand .wrapper {
-	width: 1500px;
+#main-footer .innerbox {
+	width: 1500px; height: 100%;
 	margin: 0 auto;
 }
-.brand .innerbox {
+#main-footer .top {
+	width: 100%; height: 100px;
 	display: flex;
-	width: 4200px;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
 }
-.brand .innerbox .txt {
-	width: 500px;
+#main-footer .top h2 {
+	width: 200px; height: 80px;
 }
-.brand .innerbox div {
-	width: 700px; height: 450px;
-	background: #fff;
-	margin-right: 50px;
+#main-footer .top h2 a {
+	display: block;
+	width: 100%; height: 100%;
+	text-indent: -9999px;
+	background: url(../images/footer_logo.png) no-repeat center center;
+	background-size: cover;
 }
-
-#main_footer {
-	width: 100%; height: 300px;
-} */
+#main-footer .sns {
+	font-size: 3rem;
+	padding-right: 15px;
+}
+#main-footer .sns a:first-of-type {
+	margin-right: 10px;
+}
+#main-footer .bottom {
+	width: 100%;
+	display: flex;
+}
+#main-footer .bottom div {
+	flex: 1;
+}
+#main-footer li {
+	display: inline-block;
+	margin-bottom: 8px;
+}
+#main-footer li::after {
+	content: '|';
+	font-size: 0.875rem;
+	margin: 7px;
+	position: relative; top: -1px;
+}
+#main-footer li:last-of-type::after {
+	content: '';
+}
+#main-footer .mid {
+	text-align: center;
+}
+#main-footer .mid address {
+	margin-bottom: 8px;
+}
+#main-footer .center {
+	margin-bottom: 45px;
+	transform: translateX(-26px);
+}
+#main-footer .copy {
+	font-size: 0.75rem;
+}
+#main-footer .right ul {
+	margin-bottom: 8px;
+}
+#main-footer .right li {
+	margin-bottom: 0;
+}
+#main-footer .right li::after {
+	margin: 5px;
+}
+#main-footer .right li:first-of-type {
+	font-weight: 600;
+}
+#main-footer .right li:hover a{
+	text-decoration: underline;
+}
