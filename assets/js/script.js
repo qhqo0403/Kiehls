@@ -36,6 +36,10 @@ const best_swiper = new Swiper(".best", {
 const story_swiper = new Swiper(".story", {
   slidesPerView: "auto",
   spaceBetween: 50,
+  scrollbar: {
+    el: ".swiper-scrollbar",
+    draggable: true
+  },
 })
 
 const anchors = document.querySelectorAll('a');
