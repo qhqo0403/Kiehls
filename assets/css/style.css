@@ -220,29 +220,29 @@ h1, h2, h3, .font {
 .main-content .slider {
 	position: relative;
 }
-.main-content .slider .text {
+.main-content .slider .txt {
 	position: absolute; left: 0; top: 50%;
 	width: 50%; height: 100%;
 	padding-left: 200px;
 	box-sizing: border-box;
 }
-.main-content .slider .text span {
+.main-content .slider .txt span {
 	font-size: 0.75rem;
 	margin-left: 3px;
 }
-.main-content .slider .text h2 {
+.main-content .slider .txt h2 {
 	font-size: 2rem;
 	margin-bottom: 20px;
 }
-.main-content .slider .text p:first-of-type {
+.main-content .slider .txt p:first-of-type {
 	font-size: 1.25rem;
 	margin-bottom: 3px;
 }
-.main-content .slider .text p:last-of-type {
+.main-content .slider .txt p:last-of-type {
 	font-size: 0.875rem;
 	margin-bottom: 50px;
 }
-.main-content .slider .text a {
+.main-content .slider .txt a {
 	display: inline-block;
 	font-size: 0.875rem;
 	padding: 10px 30px;
@@ -251,7 +251,7 @@ h1, h2, h3, .font {
 	font-size: 0.875rem;
 	transition: all .4s;
 }
-.main-content .slider .text a:hover {
+.main-content .slider .txt a:hover {
 	background: #333;
 	color: #fff;
 }
@@ -439,9 +439,45 @@ h1, h2, h3, .font {
 }
 /*new*/
 .new {
-	width: 100%; height: 1000px;
+	width: 100%;;
+	background: #f7f2ed;
+	padding: 100px 0 150px;
+	box-sizing: border-box;
 }
-
+.new .new-item {
+	width: 1500px; height: 500px;
+	margin: 0 auto;
+	border: 1px solid #333;
+}
+.new .recommend {
+	width: 1500px; height: 600px;
+	margin: 0 auto;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.new .recommend div {
+	margin-right: 150px;
+}
+.new .recommend div:nth-of-type(3) {
+	margin-right: 0px;
+}
+.new .recommend div:last-of-type {
+	margin-right: 0;
+}
+.new .recommend .detail {
+	width: 100%; height: 200px;
+}
+.new .recommend .or {
+	align-self: center;
+	margin-right: 50px;
+	font-size: 3rem;
+	font-weight: 400;
+}
+.new .recommend .u-cream img {
+	transform: scale(0.7);
+}
 /*brand*/
 .brand {
 	padding-left: 200px;
@@ -471,6 +507,10 @@ h1, h2, h3, .font {
 	text-align: center;
 	line-height: 40px; 
 	margin-top: auto;
+}
+.brand .heading a:active {
+	background: #333;
+	color: #fff;
 }
 .brand .story {
 	padding-bottom: 30px;
@@ -514,6 +554,7 @@ h1, h2, h3, .font {
 .brand .story .swiper-scrollbar-drag {
 	border-radius: 3px;
 }
+
 /*footer*/
 #main-footer {
 	width: 100%; height: 250px;
