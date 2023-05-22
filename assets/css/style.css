@@ -7,7 +7,7 @@
 
 
 /* default css*/
-body, header, nav, main, footer, section, div, p, h1, h2, h3, ul, li, button, address { 
+body, header, nav, main, footer, section, div, p, h1, h2, h3, h4, ul, li, button, address { 
 	margin: 0px; padding: 0px;
 }
 ul {
@@ -206,10 +206,10 @@ h1, h2, h3, .font {
 /* main start*/
 #main-container {
 	padding-top: 100px;
-	margin-bottom: 100px;
+	margin-bottom: 150px;
 }
 .main-content {
-	margin-bottom: 150px;
+	margin-bottom: 100px;
 }
 .main-content .main {
 	margin-bottom: 100px;
@@ -370,7 +370,7 @@ h1, h2, h3, .font {
 /*products*/
 /*best seller*/
 .products {
-	margin-bottom: 150px;
+	margin-bottom: 200px;
 }
 .best {
 	max-width: 1500px;
@@ -441,8 +441,7 @@ h1, h2, h3, .font {
 /*new*/
 .new {
 	width: 100%; height: 700px;
-	background: #f7f2ed;
-	box-sizing: border-box;
+	background: url(../images/new_banner.jpg) no-repeat center center;
 	margin-bottom: 100px;
 }
 
@@ -451,24 +450,39 @@ h1, h2, h3, .font {
 	max-width: 1500px;
 	margin: 0 auto;
 }
+.recommend .heading {
+	margin-bottom: 10px;
+}
+.recommend .heading span {
+	font-size: 1.25rem;
+}
+.recommend .heading p {
+	font-size: 1.75rem;
+}
 .recommend .contents {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;	
+}
+.recommend .left img {
+	width: 100%;
+}
+.recommend .right {
+	width: 725px;
+}
+.recommend .normal, .recommend .aqua {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
-.recommend .left, .recommend .right {
-	width: 725px; height: 600px;
-	border: 1px solid #333;
+.recommend .right .line {
+	display: block;
+	width: 680px; height: 1px;
+	background: #555;
+	margin: 20px 0;
+	transform: translateX(15px);
 }
-.recommend .normal {
-	width: 100%; height: 50%;
-	border: 1px solid red;
-	display: flex;
-	justify-content: space-between;
-}
-.recommend .normal .imgbox , .recommend .normal .detail {
-	width: 350px; height: 100%;
-	background: #f2f2f2;
-}
+
 /*brand*/
 .brand {
 	padding-left: 200px;
