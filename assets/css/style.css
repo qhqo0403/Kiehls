@@ -7,7 +7,7 @@
 
 
 /* default css*/
-body, header, nav, main, footer, section, div, p, h1, h2, h3, h4, ul, li, button, address { 
+body, header, nav, main, footer, section, div, p, h1, h2, h3, ul, li, button, address { 
 	margin: 0px; padding: 0px;
 }
 ul {
@@ -295,12 +295,12 @@ h1, h2, h3, .font {
 	padding: 50px 0 0 70px;
 }
 .main-content .benefit .txt h2 {
-	font-weight: normal;
+	font-weight: 500;
 	font-size: 2rem;
 	margin-bottom: 10px;
 }
 .main-content .benefit .txt p {
-	font-size: 20px;
+
 	margin-bottom: 60px;
 }
 .main-content .benefit .txt a {
@@ -310,8 +310,9 @@ h1, h2, h3, .font {
 	border-radius: 10px;
 	font-size: 0.875rem;
 	font-weight: 400;
+	transition: all .4s;
 }
-.main-content .benefit .txt a:active {
+.main-content .benefit .txt a:hover {
 	background: #333;
 	color: #fff;
 }
@@ -370,7 +371,7 @@ h1, h2, h3, .font {
 /*products*/
 /*best seller*/
 .products {
-	margin-bottom: 200px;
+	margin-bottom: 150px;
 }
 .best {
 	max-width: 1500px;
@@ -443,8 +444,56 @@ h1, h2, h3, .font {
 	width: 100%; height: 700px;
 	background: url(../images/new_banner.jpg) no-repeat center center;
 	margin-bottom: 100px;
+	position: relative;
 }
-
+.new .txt {
+	position: absolute; right: 200px; top: 200px;
+}
+.new .txt .font{
+	display: inline-block;
+	font-weight: 500;
+	font-size: 2.5rem;
+	background:	crimson;
+	color: #fff;
+	padding: 0 5px;
+}
+.new .txt .small {
+	display: block;
+	font-size: 0.875rem;
+	font-weight: 400;
+	margin-top: 30px;
+}
+.new .txt h2 {
+	position: relative;
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+.new .txt p {
+	font-weight: 400;
+}
+.new .txt p:last-of-type {
+	margin-bottom: 3px;
+}
+.new .txt .test {
+	display: block;
+	font-weight: 400;
+	font-size: 0.75rem;
+	margin-bottom: 50px;
+}
+.new .txt a {
+	display: inline-block;
+	font-size: 0.875rem;
+	font-weight: 400;
+	padding: 10px 30px;
+	border: 1px solid #333;
+	border-radius: 10px;
+	font-size: 0.875rem;
+	transition: all .4s;
+}
+.new .txt a:hover {
+	background: #333;
+	color: #fff;
+}
 /*recommend*/
 .recommend {
 	max-width: 1500px;
@@ -464,11 +513,8 @@ h1, h2, h3, .font {
 	display: flex;
 	justify-content: space-between;	
 }
-.recommend .left img {
+.recommend img {
 	width: 100%;
-}
-.recommend .right {
-	width: 725px;
 }
 .recommend .normal, .recommend .aqua {
 	width: 100%;
@@ -478,10 +524,35 @@ h1, h2, h3, .font {
 .recommend .right .line {
 	display: block;
 	width: 680px; height: 1px;
-	background: #555;
+	background: #999;
 	margin: 20px 0;
 	transform: translateX(15px);
 }
+.recommend .detail {
+	padding-top: 20px;
+	margin-right: 50px;
+}
+.recommend .detail h3 {
+	margin-bottom: 100px;
+}
+.recommend .detail p {
+	font-size: 0.875rem;
+	font-weight: 400;
+	margin-bottom: 5px;
+}
+.recommend .detail p:last-of-type {
+	margin-bottom: 0;
+}
+.recommend .right .imgbox {
+	overflow: hidden;
+}
+.recommend .right .imgbox img {
+	transition: all .4s;
+}
+.recommend .right .imgbox:hover img {
+	transform: scale(1.1);
+}
+
 
 /*brand*/
 .brand {
@@ -541,7 +612,6 @@ h1, h2, h3, .font {
 	display: block;
 	width: 100%; height: 100%;
 	color: #fff;
-	font-weight: 500;
 	padding: 330px 0 0 30px;
 	box-sizing: border-box;
 }
