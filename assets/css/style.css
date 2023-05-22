@@ -1,9 +1,8 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 
 
 /* default css*/
@@ -34,6 +33,7 @@ body {
 h1, h2, h3, .font {
 	font-family: 'Montserrat', sans-serif;
 }
+
 /*header*/
 #main-header {
 	width: 100vw; height: 100px;
@@ -255,7 +255,6 @@ h1, h2, h3, .font {
 	background: #333;
 	color: #fff;
 }
-
 .main-content .main button {
 	background: transparent;
 	color: #fff;
@@ -309,7 +308,6 @@ h1, h2, h3, .font {
 	border: 1px solid #333;
 	border-radius: 10px;
 	font-size: 0.875rem;
-	font-weight: 400;
 	transition: all .4s;
 }
 .main-content .benefit .txt a:hover {
@@ -335,6 +333,7 @@ h1, h2, h3, .font {
 }
 .alpha p.moving {
 	font-size: 8rem;
+	font-weight: 500;
 	color: #fff;
 }
 .alpha>p:nth-of-type(1){
@@ -348,7 +347,6 @@ h1, h2, h3, .font {
 }
 .alpha div p{
 	font-size: 1.25rem;
-	font-weight: 300;
 	letter-spacing: 0.5rem;
 	opacity: 0;
 }
@@ -364,14 +362,14 @@ h1, h2, h3, .font {
 	transform: translateY(0);
 }
 .alpha div span {
-	font-weight: 500;
+	font-weight: 700;
 }
 
 
 /*products*/
 /*best seller*/
 .products {
-	margin-bottom: 150px;
+	margin-bottom: 200px;
 }
 .best {
 	max-width: 1500px;
@@ -420,7 +418,6 @@ h1, h2, h3, .font {
 }
 .best .detail p {
 	font-size: 0.875rem;
-	font-weight: 400;
 	margin-bottom: 10px;
 }
 .best .price {
@@ -460,7 +457,6 @@ h1, h2, h3, .font {
 .new .txt .small {
 	display: block;
 	font-size: 0.875rem;
-	font-weight: 400;
 	margin-top: 30px;
 }
 .new .txt h2 {
@@ -468,22 +464,17 @@ h1, h2, h3, .font {
 	font-size: 2rem;
 	margin-bottom: 20px;
 }
-.new .txt p {
-	font-weight: 400;
-}
 .new .txt p:last-of-type {
 	margin-bottom: 3px;
 }
 .new .txt .test {
 	display: block;
-	font-weight: 400;
 	font-size: 0.75rem;
 	margin-bottom: 50px;
 }
 .new .txt a {
 	display: inline-block;
 	font-size: 0.875rem;
-	font-weight: 400;
 	padding: 10px 30px;
 	border: 1px solid #333;
 	border-radius: 10px;
@@ -501,6 +492,7 @@ h1, h2, h3, .font {
 }
 .recommend .heading {
 	margin-bottom: 10px;
+	font-weight: 500;
 }
 .recommend .heading span {
 	font-size: 1.25rem;
@@ -537,7 +529,6 @@ h1, h2, h3, .font {
 }
 .recommend .detail p {
 	font-size: 0.875rem;
-	font-weight: 400;
 	margin-bottom: 5px;
 }
 .recommend .detail p:last-of-type {
@@ -552,7 +543,6 @@ h1, h2, h3, .font {
 .recommend .right .imgbox:hover img {
 	transform: scale(1.1);
 }
-
 
 /*brand*/
 .brand {
@@ -570,7 +560,6 @@ h1, h2, h3, .font {
 	margin-bottom: 8px;
 }
 .brand .heading p {
-	font-weight: 400;
 	margin-bottom: 30px;
 	font-size: 1.125rem;
 }
@@ -579,7 +568,6 @@ h1, h2, h3, .font {
 	border: 1px solid #333;
 	border-radius: 10px;
 	font-size: 0.875rem;
-	font-weight: 400;
 	text-align: center;
 	line-height: 40px; 
 	margin-top: auto;
@@ -635,7 +623,6 @@ h1, h2, h3, .font {
 	width: 100%; height: 250px;
 	background: #f2f2f0;
 	font-size: 0.875rem;
-	font-weight: 400;
 	padding-top: 10px;
 	box-sizing: border-box;
 }
@@ -684,7 +671,7 @@ h1, h2, h3, .font {
 	margin: 7px;
 	position: relative; top: -1px;
 }
-#main-footer li:last-of-type::after {
+#main-footer li:last-of-type::after, #main-footer .left li:nth-of-type(2)::after {
 	content: '';
 }
 #main-footer .mid {
@@ -710,7 +697,7 @@ h1, h2, h3, .font {
 	margin: 5px;
 }
 #main-footer .right li:first-of-type {
-	font-weight: 600;
+	font-weight: 500;
 }
 #main-footer .right li:hover a{
 	text-decoration: underline;

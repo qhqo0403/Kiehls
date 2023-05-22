@@ -5,6 +5,9 @@ const main_swiper = new Swiper('.main', {
   speed: 1000,
   spaceBetween: 0,
 
+  observer: true,
+  observeParents: true,
+
   autoplay: {
     disableOnInteraction: false,
   },
@@ -23,6 +26,9 @@ const best_swiper = new Swiper(".best", {
   slidesPerView: 4,
   spaceBetween: 40,
 
+  observer: true,
+  observeParents: true,
+
   autoplay: {
     disableOnInteraction: false,
   },
@@ -40,6 +46,8 @@ const story_swiper = new Swiper(".story", {
     el: ".swiper-scrollbar",
     draggable: true
   },
+  observer: true,
+  observeParents: true,
 })
 
 const anchors = document.querySelectorAll('a');
