@@ -92,6 +92,7 @@ h1, h2, h3, .font {
 	width: 40px; height: 40px;
 	position: relative;
 	overflow: hidden;
+	transition: all .4s;
 }
 #main-header .search.active {
 	width: 400px;
@@ -128,6 +129,11 @@ h1, h2, h3, .font {
 	transform: translateY(-50%);
 	cursor: pointer;
 	opacity: 0;
+	pointer-events: none;
+}
+#main-header .search.active .clear {
+	opacity: 1;
+	pointer-events: all;
 }
 /*toggle button*/
 #main-header .toggle-btn {
@@ -144,6 +150,7 @@ h1, h2, h3, .font {
 	background: #333;
 	border-radius: 3px;
 	opacity: 1;
+	transition: all .4s;
 }
 #main-header .toggle-btn .sr-only {
 	width: 0; height: 0;
@@ -162,10 +169,14 @@ h1, h2, h3, .font {
 /*gnb*/
 #main-header .gnb {
 	width: 350px; height: 100vh;
-	position: absolute; right: -100%; top: 0; z-index: 100;
+	position: absolute; right: -350px; top: 0; z-index: 100;
+	background: #fff;
+	border-left: 1px solid #eee;
+	box-sizing: border-box;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: all .6s;
 }
 #main-header .gnb.active {
 	right: 0;
