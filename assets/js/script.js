@@ -1,4 +1,4 @@
-/*
+
 // 메인 슬라이더 스와이퍼
 const main_swiper = new Swiper('.main', {
   direction: 'horizontal',
@@ -50,7 +50,7 @@ const story_swiper = new Swiper(".story", {
   },
   observer: true,
   observeParents: true,
-}) */
+})
 
 const anchors = document.querySelectorAll('a');
 const toggleBtn = document.querySelector('.toggle-btn');
