@@ -1,4 +1,3 @@
-
 // 메인 슬라이더 스와이퍼
 const main_swiper = new Swiper('.main', {
   direction: 'horizontal',
@@ -23,6 +22,7 @@ const main_swiper = new Swiper('.main', {
     prevEl: '.swiper-button-prev',
   },
 });
+
 // 베스트 셀러 스와이퍼
 const best_swiper = new Swiper(".best", {
   slidesPerView: 4,
@@ -40,6 +40,7 @@ const best_swiper = new Swiper(".best", {
     prevEl: '.swiper-button-prev',
   },
 });
+
 // 브랜드 스토리 스와이퍼
 const story_swiper = new Swiper(".story", {
   slidesPerView: "auto",
