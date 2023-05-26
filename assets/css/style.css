@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
-
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 /* default css*/
 body, header, nav, main, footer, section, div, p, h1, h2, h3, ul, li, button, address { 
@@ -21,16 +21,14 @@ img, button {
 address {
 	font-style: normal;
 }
+
 /*style*/
 body {
-	font-family: 'Noto Sans KR', sans-serif;
+	font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
 	font-size: 16px;
 	color: #333;
 	cursor: default;
 	overflow-x: hidden;
-}
-h1, h2, h3, .font {
-	font-family: 'Montserrat', sans-serif;
 }
 
 /*header*/
@@ -100,7 +98,7 @@ h1, h2, h3, .font {
 	position: absolute; left: 0; top: 50%;
 	transform: translateY(-50%);
 	width: 40px; height: 40px;
-	font-size: 2rem;
+	font-size: 2.125rem;
 	text-align: center;
 	line-height: 40px;
 	cursor: pointer;
@@ -238,8 +236,10 @@ h1, h2, h3, .font {
 	box-sizing: border-box;
 }
 .main-content .slider .txt span {
+	display: block;
 	font-size: 0.75rem;
 	margin-left: 3px;
+	transform: translateY(5px);
 }
 .main-content .slider .txt h2 {
 	font-size: 2rem;
@@ -347,19 +347,19 @@ h1, h2, h3, .font {
 	font-weight: 500;
 	color: #fff;
 }
-.alpha>p:nth-of-type(1){
+/* .alpha>p:nth-of-type(1){
 	transform: translateX(-100%);
 }
 .alpha>p:nth-of-type(2) {
 	transform: translateX(100%);
-}
+} */
 .alpha div {
 	margin-top: 30px;
 }
 .alpha div p{
 	font-size: 1.25rem;
 	letter-spacing: 0.5rem;
-	opacity: 0;
+/* 	opacity: 0; */
 }
 .alpha div p:nth-of-type(1) {
 	margin-bottom: 30px;
@@ -455,9 +455,9 @@ h1, h2, h3, .font {
 	position: relative;
 }
 .new .txt {
-	position: absolute; right: 200px; top: 200px;
+	position: absolute; right: 10%; top: 25%;
 }
-.new .txt .font{
+.new .txt .new-tag{
 	display: inline-block;
 	font-weight: 500;
 	font-size: 2.5rem;
@@ -496,6 +496,8 @@ h1, h2, h3, .font {
 	background: #333;
 	color: #fff;
 }
+
+
 /*recommend*/
 .recommend {
 	max-width: 1500px;
@@ -582,8 +584,9 @@ h1, h2, h3, .font {
 	text-align: center;
 	line-height: 40px; 
 	margin-top: auto;
+	transition: all .4s;
 }
-.brand .heading a:active {
+.brand .heading a:hover {
 	background: #333;
 	color: #fff;
 }
@@ -638,7 +641,7 @@ h1, h2, h3, .font {
 	box-sizing: border-box;
 }
 #main-footer .innerbox {
-	width: 1500px; height: 100%;
+	max-width: 1500px; height: 100%;
 	margin: 0 auto;
 }
 #main-footer .top {
