@@ -62,11 +62,17 @@ const clearBtn = document.querySelector('.clear');
 const searchInput = document.querySelector('.input-frame input');
 
 // a태그 최상단 이동 방지
+/* 
+이벤트로 조작하는 것보단 속성으로 바꾸는게 좋을것 같아서 수정!
 anchors.forEach(anchor => {
   anchor.addEventListener('click', event => {
     event.preventDefault();
   })
+}); */
+anchors.forEach(anchor => {
+  anchor.setAttribute('href', 'javascript:void(0)');
 });
+
 
 // toggle button 누르면 gnb 보이고, 버튼 모양 변형
 toggleBtn.addEventListener('click', () => {
