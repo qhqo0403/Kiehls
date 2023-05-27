@@ -91,3 +91,4 @@ clearBtn.addEventListener('click', function() {
     searchBox.classList.remove('active');
   }
 });
+
