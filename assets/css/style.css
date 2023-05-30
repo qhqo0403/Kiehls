@@ -946,4 +946,63 @@ body, html {
 		margin-left: 10px;
 		font-size: 1.25rem;
 	}
+	/* main-slider */
+	#main-container {
+		padding-top: 70px;
+		margin-bottom: 50px;
+	}
+	.main-content {
+		margin-bottom: 50px;
+	}
+	.main-content .main {
+		margin-bottom: 50px;
+	}
+	/* benefit */
+	.main-content .benefit {
+		max-width: 95%; height: 130px;
+	}
+	.main-content .benefit .txt {
+		padding: 15px 0 0 15px;
+	}
+	.main-content .benefit .txt h2 {
+		font-size: 1.5rem;
+		margin-bottom: 5px;
+	}
+	.main-content .benefit .txt p {
+		margin-bottom: 20px;
+	}
+	.main-content .benefit .txt strong {
+		display: block;
+	}
+	.main-content .benefit .txt a {
+		padding: 3px 10px;
+		font-size: 0.5rem;
+		border-radius: 8px;
+	}
+	/* intro */
+	.intro {
+		width: 100%; height: 500px;
+		margin-bottom: 50px;
+	}
+	.intro .alpha {
+		padding-top: 100px;
+	}
+	.alpha p.moving {
+		font-size: 3.5rem;
+		margin-bottom: 10px;
+		transform: translateY(50px);
+	}
+	.alpha div {
+		margin-top: 25px;
+	}
+	.alpha div p {
+		letter-spacing: 0;
+	}
+	.alpha div p:nth-of-type(1) {
+		margin-bottom: 10px;
+		transform: translateY(50px);
+	}
+	.alpha div p:nth-of-type(2) {
+		transform: translateY(50px);
+	}
 }
