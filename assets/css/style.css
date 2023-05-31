@@ -416,11 +416,19 @@ body, html {
 	border: 1px solid #f2f2f0;
 }
 .best .item {
-	max-width: 350px; 
+	max-width: 350px;
+	position: relative;
 }
 .best .item img {
 	width: 100%;
+}
+.best .item .hover-img {
+	position: absolute; left: 0; top: 0;
+	opacity: 0;
 	transition: all .4s;
+}
+.best .item:hover .hover-img{
+  opacity: 1;
 }
 .best button {
 	background: transparent;

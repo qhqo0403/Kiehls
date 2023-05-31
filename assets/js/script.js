@@ -58,7 +58,7 @@ const story_swiper = new Swiper(".story", {
   },
   observer: true,
   observeParents: true,
-})
+});
 
 const anchors = document.querySelectorAll('a');
 const toggleBtn = document.querySelector('.toggle-btn');
@@ -68,18 +68,12 @@ const searchBtn = document.querySelector('.icon');
 const clearBtn = document.querySelector('.clear');
 const searchInput = document.querySelector('.input-frame input');
 
-// a태그 최상단 이동 방지
-/* 
-이벤트로 조작하는 것보단 속성으로 바꾸는게 좋을것 같아서 수정!
-anchors.forEach(anchor => {
-  anchor.addEventListener('click', event => {
-    event.preventDefault();
-  })
-}); */
+const items = document.querySelectorAll('.item');
+const itemImg = document.querySelectorAll('.item img');
+
 anchors.forEach(anchor => {
   anchor.setAttribute('href', 'javascript:void(0)');
 });
-
 
 // toggle button 누르면 gnb 보이고, 버튼 모양 변형
 toggleBtn.addEventListener('click', () => {
@@ -98,4 +92,15 @@ clearBtn.addEventListener('click', function() {
     searchBox.classList.remove('active');
   }
 });
-
+/* 
+items.forEach(item => {
+  const img = item.querySelector('img');
+  const imgSrc = img.getAttribute('src');
+  const imgData = img.getAttribute('data-name');
+  item.addEventListener('mouseover', () => {
+    img.setAttribute('src', `assets/images/${imgData}_texture.jpg`);
+  })
+  item.addEventListener('mouseleave', () => {
+    img.setAttribute('src', imgSrc);
+  })
+}) */
