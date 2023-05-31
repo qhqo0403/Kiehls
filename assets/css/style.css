@@ -231,6 +231,9 @@ body, html {
 .main-content .swiper-slide img {
 	width: 100%;
 }
+.main-content .swiper-slide .mobile {
+	display: none;
+}
 .main-content .slider {
 	position: relative;
 }
@@ -469,11 +472,11 @@ body, html {
 	background:	crimson;
 	color: #fff;
 	padding: 0 5px;
+	margin-bottom: 30px;
 }
 .new .txt .small {
 	display: block;
 	font-size: 0.875rem;
-	margin-top: 30px;
 }
 .new .txt h2 {
 	position: relative;
@@ -535,8 +538,7 @@ body, html {
 	display: block;
 	width: 95%; height: 1px;
 	background: #999;
-	margin: 20px 0;
-	transform: translateX(15px);
+	margin: 20px auto;
 }
 .recommend .detail {
 	padding-top: 20px;
@@ -567,6 +569,7 @@ body, html {
 	width: 100%;
 	padding-left: 200px;
 	display: flex;
+	box-sizing: border-box;
 }
 .brand .heading {
 	margin-right: 80px;
@@ -647,16 +650,15 @@ body, html {
 	width: 100%;
 	background: #f2f2f0;
 	font-size: 0.875rem;
-	padding-top: 10px;
+	padding-top: 20px;
 	padding-bottom: 10px;
-	box-sizing: border-box;
 }
 #main-footer .innerbox {
-	max-width: 1500px; height: 100%;
+	max-width: 1500px;
 	margin: 0 auto;
 }
 #main-footer .top {
-	width: 100%; height: 100px;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -876,7 +878,7 @@ body, html {
 	}
 	/*header*/
 	#main-header {
-		height: 70px;
+		height: 80px;
 		padding: 0 10px
 	}
 	#main-header h1 {
@@ -897,7 +899,7 @@ body, html {
 	#main-header .toggle-btn {
 		width: 35px; height: 35px;
 		margin-left: 0;
-		margin-top: 10px;
+		margin-top: 15px;
 	}
 	#main-header .toggle-btn span {
 		width: 35px; height: 5px;
@@ -948,7 +950,7 @@ body, html {
 	}
 	/* main-slider */
 	#main-container {
-		padding-top: 70px;
+		padding-top: 80px;
 		margin-bottom: 50px;
 	}
 	.main-content {
@@ -956,6 +958,42 @@ body, html {
 	}
 	.main-content .main {
 		margin-bottom: 50px;
+	}
+	.main-content .swiper-slide .desktop {
+		display: none;
+	}
+	.main-content .swiper-slide .mobile {
+		display: block;
+	}
+	.main-content .slider .txt {
+		width: auto;
+		left: 50%; top: 15%;
+		transform: translate(-50%, 0);
+		padding-left: 0;
+		white-space: nowrap;
+	}
+	.main-content .slider .txt .m_space {
+		display: block;
+		font-size: 2rem;
+		margin: 0;
+	}
+	.main-content .slider .txt span {
+		transform: translateY(0);
+	}
+	.main-content .slider .txt p:last-of-type {
+		margin-bottom: 30px;
+	}
+	.main-content .slider .txt a {
+		padding: 5px 15px;
+	}
+	.main-content .main button {
+		color: #555;
+	}
+	.main-content .main button.swiper-button-prev {
+		left: 10px;
+	}
+	.main-content .main button.swiper-button-next {
+		right: 10px;
 	}
 	/* benefit */
 	.main-content .benefit {
@@ -1004,5 +1042,152 @@ body, html {
 	}
 	.alpha div p:nth-of-type(2) {
 		transform: translateY(50px);
+	}
+	/* best seller */
+	.products {
+		margin-bottom: 50px;
+	}
+	.best {
+		padding: 0 10px;
+		margin-bottom: 50px;
+	}
+	.best-heading {
+		margin-bottom: 10px;
+	}
+	.best-heading h2 {
+		font-size: 2.5rem;
+	}
+	.best-heading a {
+		width: 30px; height: 30px;
+		line-height: 30px;
+	}
+	.best .detail {
+		margin-top: 5px;
+		height: auto;
+	}
+	.best .detail p {
+		margin-bottom: 0;
+	}
+	/* new */
+	.new {
+		height: 500px;
+		margin-bottom: 50px;
+		background-image: url(../images/m_repair_banner.jpg);
+	}
+	.new .txt {
+		right: 50%; top: 10%;
+		transform: translateX(50%)
+	}
+	.new .txt .new-tag {
+		margin-bottom: 15px;
+	}
+	.new .txt h2 {
+		font-size: 1.5rem;
+		white-space: nowrap;
+		margin-bottom: 10px;
+	}
+	.new .txt .test {
+		margin-bottom: 20px;
+	}
+	.new .txt a {
+		padding: 5px 15px;
+	}
+	/* recommend */
+	.recommend {
+		padding: 0 10px;
+	}
+	.recommend .contents {
+		display: block;
+	}
+	.recommend .left {
+		margin-bottom: 20px;
+	}
+	.recommend .right .line {
+		width: 100%;
+		margin: 15px auto;
+	}
+	.recommend .detail {
+		padding-top: 0;
+		margin-right: 30px;
+	}
+	.recommend .detail h3 {
+		margin-bottom: 40px;
+	}
+	.recommend .right .imgbox img {
+		max-width: 180px;
+	}
+	/* brand */
+	.brand {
+		padding-left: 10px;
+		display: block;
+	}
+	.brand .heading {
+		margin-right: 0;
+	}
+	.brand .heading h2 {
+		font-size: 2.5rem;
+		margin-bottom: 0;
+	}
+	.brand .heading p {
+		margin-bottom: 15px;
+	}
+	.brand .heading a {
+		display: none;
+	}
+	.brand .story .border {
+		border: none;
+	}
+	.brand .story .swiper-slide {
+		min-width: 280px; min-height: 150px; 
+	}
+	.brand .story .content .txt {
+		opacity: 1;
+		background: rgba(0, 0, 0, 0.4);
+	}
+	.brand .story .content .txt a {
+		padding: 180px 0 0 20px;
+	}
+	
+	/* footer */
+	#main-footer {
+		padding-top: 10px;
+	}
+	#main-footer .innerbox {
+		padding: 0 10px;
+	}
+	#main-footer .top h2 {
+		width: 30%; height: 50px;
+	}
+	#main-footer .sns {
+		padding-right: 0;
+	}
+	#main-footer .sns a:first-of-type {
+		margin-right: 0;
+	}
+	#main-footer .bottom {
+		flex-direction: column;
+	}
+	#main-footer li {
+		margin-bottom: 0px;
+	}
+	#main-footer .left {
+		margin-bottom: 5px;
+	}
+	#main-footer .mid {
+		text-align: left;
+		order: 3;
+	}
+	#main-footer .mid address {
+		margin-bottom: 0px;
+	}
+	#main-footer .center {
+		margin-bottom: 5px;
+		transform: translateX(0);
+	}
+	#main-footer .right {
+		margin-bottom: 5px;
+	}
+	#main-footer .right ul {
+		margin-bottom: 5px;
 	}
 }

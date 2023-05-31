@@ -25,8 +25,8 @@ const main_swiper = new Swiper('.main', {
 
 // 베스트 셀러 스와이퍼
 const best_swiper = new Swiper(".best", {
-  slidesPerView: 4,
-  spaceBetween: 40,
+  slidesPerView: 2,
+  spaceBetween: 10,
 
   observer: true,
   observeParents: true,
@@ -39,12 +39,19 @@ const best_swiper = new Swiper(".best", {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
+  breakpoints: {
+  640: {
+    slidesPerView: 4,
+    spaceBetween: 40
+    }
+  }
 });
 
 // 브랜드 스토리 스와이퍼
 const story_swiper = new Swiper(".story", {
   slidesPerView: "auto",
-  spaceBetween: 50,
+  spaceBetween: 30,
   scrollbar: {
     el: ".swiper-scrollbar",
     draggable: true
