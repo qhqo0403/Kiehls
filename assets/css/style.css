@@ -29,6 +29,8 @@ body, html {
 	color: #333;
 	cursor: default;
 	overflow-x: hidden;
+	word-break: keep-all;
+
 }
 
 /*header*/
@@ -245,7 +247,7 @@ body, html {
 	box-sizing: border-box;
 	transition: all .4s;
 }
-.main-content .slider .txt span {
+.main-content .slider .txt span.small {
 	display: block;
 	font-size: 0.75rem;
 	margin-left: 3px;
@@ -467,6 +469,7 @@ body, html {
 .new {
 	width: 100%; height: 700px;
 	background: url(../images/new_banner.jpg) no-repeat center center;
+	background-size: cover;
 	margin-bottom: 100px;
 	position: relative;
 }
@@ -739,11 +742,61 @@ body, html {
 }
 
 /*media query*/
+/* laptop  */
+@media screen and (max-width: 1500px) and (min-width: 1025px) {
+	#main-header .innerbox {
+		padding: 0 10px;
+	}
+	/* slider */
+	.main-content .slider .txt {
+		padding-left: 150px;
+	}
+	.main-content .slider .txt p:last-of-type {
+		margin-bottom: 40px;
+	}
+	/* benefit */
+	.main-content .benefit .txt h2 {
+		font-size: 1.875rem;
+	}
+	/* intro */
+	.alpha p.moving {
+		font-size: 7rem;
+		white-space: nowrap;
+	}
+	/* best seller */
+	.best {
+		padding: 0 10px;
+	}
+	/* new */
+	.new .txt {
+		right: 8%;
+	}
+	/* recommend*/
+	.recommend {
+		padding: 0 10px;
+	}
+	.recommend .detail {
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	/* brand */
+	.brand {
+		padding-left: 100px;
+	}
+	/* footer */
+	#main-footer .innerbox {
+		padding: 0 10px;
+	}
+}
+
+
+
+
+
 /*tablet*/
 @media screen and (max-width: 1024px) and (min-width: 641px) {
 	body, html {
 		font-size: 12px;
-		word-break: keep-all;
 	}
 	#main-header .innerbox {
 		padding: 0 15px;
@@ -807,6 +860,9 @@ body, html {
 	}
   .best button.swiper-button-next {
 		right: 20px;
+	}
+	.best .item:hover hover-img {
+		opacity: 0;
 	}
 	/* new */ 
 	.new {
@@ -882,7 +938,6 @@ body, html {
 @media screen and (max-width: 640px) {
 	body, html {
 		font-size: 10px;
-		word-break: keep-all;
 	}
 	/*header*/
 	#main-header {
@@ -1068,6 +1123,9 @@ body, html {
 	.best-heading a {
 		width: 30px; height: 30px;
 		line-height: 30px;
+	}
+	.best .item:hover hover-img {
+		opacity: 0;
 	}
 	.best .detail {
 		margin-top: 5px;
