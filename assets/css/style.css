@@ -354,33 +354,47 @@ body, html {
 	padding-top: 200px;
 	box-sizing: border-box;
 }
-.alpha p.moving {
+.alpha .left-moving, .alpha .right-moving {
 	font-size: 8rem;
 	font-weight: 500;
 	color: #fff;
+	transition: all 2s;
 }
-/* .alpha>p:nth-of-type(1){
+.alpha .left-moving {
 	transform: translateX(-100%);
+	margin-bottom: 20px;
 }
-.alpha>p:nth-of-type(2) {
+.alpha .right-moving {
 	transform: translateX(100%);
-} */
+}
 .alpha div {
 	margin-top: 30px;
+	font-weight: 500;
 }
 .alpha div p{
 	font-size: 1.25rem;
-	letter-spacing: 0.5rem;
-/* 	opacity: 0; */
+	letter-spacing: 0.1rem;
+	opacity: 0;
+	transition: all 1s;
 }
 .alpha div p:nth-of-type(1) {
-	margin-bottom: 30px;
+	margin-bottom: 5px;
 	transform: translateY(100px);
 }
 .alpha div p:nth-of-type(2) {
+	margin-bottom: 40px;
 	transform: translateY(100px);
 }
-.alpha div p.action {
+.alpha div a {
+	font-size: 0.875rem;
+	transform: translateY(100px);
+	opacity: 0;
+	transition: all .4s;
+}
+.alpha div a:hover {
+	text-decoration: underline;
+}
+.alpha div p.active, .alpha div a.active {
 	opacity: 1;
 	transform: translateY(0);
 }
