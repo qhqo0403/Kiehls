@@ -388,7 +388,6 @@ body, html {
 	font-weight: 700;
 }
 
-
 /*products*/
 /*best seller*/
 .products {
@@ -515,7 +514,6 @@ body, html {
 	background: #333;
 	color: #fff;
 }
-
 
 /*recommend*/
 .recommend {
@@ -789,10 +787,6 @@ body, html {
 	}
 }
 
-
-
-
-
 /*tablet*/
 @media screen and (max-width: 1024px) and (min-width: 641px) {
 	body, html {
@@ -861,7 +855,7 @@ body, html {
   .best button.swiper-button-next {
 		right: 20px;
 	}
-	.best .item:hover hover-img {
+	.best .item:hover .hover-img {
 		opacity: 0;
 	}
 	/* new */ 
@@ -1124,7 +1118,7 @@ body, html {
 		width: 30px; height: 30px;
 		line-height: 30px;
 	}
-	.best .item:hover hover-img {
+	.best .item:hover .hover-img {
 		opacity: 0;
 	}
 	.best .detail {
