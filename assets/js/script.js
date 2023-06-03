@@ -32,20 +32,27 @@ clearBtn.addEventListener('click', function() {
 });
 
 // intro text moving effect
-/* const movingTxt = () => {
+const movingTxt = () => {
   const introSect = document.querySelector('.intro');
-  const targetPos = introSect.offsetTop;
   const left = document.querySelector('.left-moving');
   const right = document.querySelector('.right-moving');
+  const startPoint = introSect.offsetTop - (introSect.offsetTop / 3);
 
-  let initialTop = window.scrollY;
-  let flow = (initialTop - 500);
-  console.log(flow);
+  let posFromTop = introSect.getBoundingClientRect().top;
 
-  left.style.transform = `translateX(-${100 - (flow/10)}%)`;
-  right.style.transform = `translateX(${100 - (flow/10)}%)`;
+  if (posFromTop < 50 ) {
+    left.style.transform = 'translateX(0)';
+    right.style.transform = 'translateX(0)';
+    return;
+  }
+  if (posFromTop < startPoint) {
+    left.style.transform = `translateX(-${posFromTop/10}%)`;
+    right.style.transform = `translateX(${posFromTop/10}%)`;
+  }
+  console.log(posFromTop/10)
 }
- */
+
+
 // intro text reveal
 const revealTxt = () => {
   const introSect = document.querySelector('.intro');
@@ -70,7 +77,7 @@ const revealTxt = () => {
 
 window.addEventListener('scroll', () => {
   revealTxt();
-/*   movingTxt(); */
+  movingTxt();
 })
 
 
