@@ -40,14 +40,14 @@ const movingTxt = () => {
 
   let posFromTop = introSect.getBoundingClientRect().top;
 
-  if (posFromTop < 50 ) {
+  if (posFromTop < 100 ) {
     left.style.transform = 'translateX(0)';
     right.style.transform = 'translateX(0)';
     return;
   }
   if (posFromTop < startPoint) {
-    left.style.transform = `translateX(-${posFromTop/10}%)`;
-    right.style.transform = `translateX(${posFromTop/10}%)`;
+    left.style.transform = `translateX(-${(posFromTop/10) - 10}%)`;
+    right.style.transform = `translateX(${(posFromTop/10) - 10}%)`;
   }
   console.log(posFromTop/10)
 }
