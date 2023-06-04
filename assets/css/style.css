@@ -397,9 +397,6 @@ body, html {
 	opacity: 1;
 	transform: translateY(0);
 }
-.alpha div span {
-	font-weight: 700;
-}
 
 /*products*/
 /*best seller*/
@@ -770,7 +767,7 @@ body, html {
 		font-size: 1.875rem;
 	}
 	/* intro */
-	.alpha p.moving {
+	.alpha .left-moving, .alpha .right-moving {
 		font-size: 7rem;
 		white-space: nowrap;
 	}
@@ -850,8 +847,8 @@ body, html {
 	.intro {
 		margin-bottom: 100px;
 	}
-	.alpha p.moving {
-		font-size: 7rem;
+	.alpha .left-moving, .alpha .right-moving {
+		font-size: 6.5rem;
 		white-space: nowrap;
 	}
 	/* best seller */
@@ -944,7 +941,7 @@ body, html {
 /*mobile*/
 @media screen and (max-width: 640px) {
 	body, html {
-		font-size: 10px;
+		font-size: 12px;
 	}
 	/*header*/
 	#main-header {
@@ -1093,25 +1090,36 @@ body, html {
 		margin-bottom: 50px;
 	}
 	.intro .alpha {
-		padding-top: 100px;
+		padding: 100px 10px 0;
 	}
-	.alpha p.moving {
-		font-size: 3.5rem;
+	.alpha .left-moving, .alpha .right-moving {
+		font-size: 2.875rem;
 		margin-bottom: 10px;
-		transform: translateY(50px);
+	}
+	.alpha .right-moving {
+		margin-bottom: 20px;
 	}
 	.alpha div {
-		margin-top: 25px;
+		margin-top: 0;
 	}
 	.alpha div p {
 		letter-spacing: 0;
+		font-size: 1rem;
 	}
 	.alpha div p:nth-of-type(1) {
-		margin-bottom: 10px;
+		margin-bottom: 5px;
 		transform: translateY(50px);
 	}
 	.alpha div p:nth-of-type(2) {
+		margin-bottom: 20px;
 		transform: translateY(50px);
+	}
+	.alpha .m_space {
+		display: block;
+	}
+	.alpha div p.active, .alpha div a.active {
+		opacity: 1;
+		transform: translateY(0);
 	}
 	/* best seller */
 	.products {
