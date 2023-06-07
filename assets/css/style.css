@@ -753,7 +753,7 @@ body, html {
 /* laptop  */
 @media screen and (max-width: 1500px) and (min-width: 1025px) {
 	#main-header .innerbox {
-		padding: 0 10px;
+		padding: 0 15px;
 	}
 	/* slider */
 	.main-content .slider .txt {
@@ -773,7 +773,7 @@ body, html {
 	}
 	/* best seller */
 	.best {
-		padding: 0 10px;
+		padding: 0 15px;
 	}
 	/* new */
 	.new .txt {
@@ -789,11 +789,11 @@ body, html {
 	}
 	/* brand */
 	.brand {
-		padding-left: 100px;
+		padding-left: 15px;
 	}
 	/* footer */
 	#main-footer .innerbox {
-		padding: 0 10px;
+		padding: 0 15px;
 	}
 }
 
