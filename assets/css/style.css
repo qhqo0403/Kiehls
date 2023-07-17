@@ -30,7 +30,6 @@ body, html {
 	cursor: default;
 	overflow-x: hidden;
 	word-break: keep-all;
-
 }
 
 /*header*/
@@ -359,6 +358,7 @@ body, html {
 	font-weight: 500;
 	color: #fff;
 	transition: all 1s;
+	word-break: keep-all;
 }
 .alpha .left-moving {
 	transform: translateX(-100%);
@@ -1067,11 +1067,11 @@ body, html {
 		max-width: 95%; height: 130px;
 	}
 	.main-content .benefit .txt {
-		padding: 15px 0 0 15px;
+		padding: 8px 0 0 15px;
 	}
 	.main-content .benefit .txt h2 {
-		font-size: 1.5rem;
-		margin-bottom: 5px;
+		font-size: 1.25rem;
+		margin-bottom: 10px;
 	}
 	.main-content .benefit .txt p {
 		margin-bottom: 20px;
@@ -1081,7 +1081,6 @@ body, html {
 	}
 	.main-content .benefit .txt a {
 		padding: 3px 10px;
-		font-size: 0.5rem;
 		border-radius: 8px;
 	}
 	/* intro */
@@ -1098,6 +1097,7 @@ body, html {
 	}
 	.alpha .right-moving {
 		margin-bottom: 20px;
+		white-space: nowrap;
 	}
 	.alpha div {
 		margin-top: 0;

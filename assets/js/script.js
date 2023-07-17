@@ -37,10 +37,10 @@ window.onload = function() {
     const introSect = document.querySelector('.intro');
     const left = document.querySelector('.left-moving');
     const right = document.querySelector('.right-moving');
-    const startPoint = introSect.offsetTop - (introSect.offsetTop / 3);
+    const startPoint = introSect.offsetTop - (window.innerHeight / 2);
 
     let posFromTop = introSect.getBoundingClientRect().top;
-
+    console.log(startPoint);
     if (posFromTop < 100 ) {
       left.style.transform = 'translateX(0)';
       right.style.transform = 'translateX(0)';
@@ -50,7 +50,6 @@ window.onload = function() {
       left.style.transform = `translateX(-${(posFromTop/10) - 10}%)`;
       right.style.transform = `translateX(${(posFromTop/10) - 10}%)`;
     }
-    /* console.log(posFromTop/10) */
   };
 
 
