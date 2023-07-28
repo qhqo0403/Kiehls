@@ -1033,11 +1033,11 @@ body, html {
 		display: block;
 	}
 	.main-content .slider .txt {
-		width: auto;
+		width: 80%;
 		left: 50%; top: 15%;
 		transform: translate(-50%, 0);
 		padding-left: 0;
-		white-space: nowrap;
+		/* white-space: nowrap; */
 	}
 	.main-content .slider .txt .m_space {
 		display: block;
