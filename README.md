@@ -1,5 +1,5 @@
 # Kiehls
- Kiehls 사이트를 리뉴얼하여 제작한 사이트 입니다. <br />
+ Kiehls 사이트를 리뉴얼하여 제작한 반응형 사이트 입니다. <br />
  [키엘 리뉴얼 사이트 링크](https://qhqo0403.github.io/Kiehls/)
 
 ## ✏️사용스택
